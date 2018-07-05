@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Player {
 
-    static final String VERSION = "Default Java folding player";
+    static final String VERSION = "V1.1";
 
     public static int betRequest(JsonElement request) {
 
@@ -15,14 +15,14 @@ public class Player {
             int i = request.getAsJsonObject().getAsJsonObject("round").getAsInt();
             if (i<15) return 0;
 
-            if (Math.random() > 0.1) {
+            if (Math.random() > 0.37) {
 
                 return 3000 * (int) Math.random();
             }
             return 0;
         } catch (Exception e) {
 
-            if (Math.random() > 0.1) {
+            if (Math.random() > 0.37) {
 
                 return 3000 * (int) Math.random();
             }
