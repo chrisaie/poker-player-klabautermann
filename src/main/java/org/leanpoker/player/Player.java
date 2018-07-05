@@ -9,7 +9,7 @@ public class Player {
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        if(Math.random() > 0.8) {
+        if(Math.random() > 0.2) {
 
             return 3000 * (int)Math.random();
         }
