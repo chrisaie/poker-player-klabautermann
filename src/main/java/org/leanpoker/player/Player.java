@@ -10,7 +10,7 @@ public class Player {
 
     public static int betRequest(JsonElement request) {
 
-        return 300 * (int)Math.random();
+        return 3000 * (int)Math.random();
     }
 
     public static void showdown(JsonElement game) {
