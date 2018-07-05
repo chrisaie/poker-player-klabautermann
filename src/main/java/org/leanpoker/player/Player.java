@@ -13,7 +13,7 @@ public class Player {
 
         try {
             int i = request.getAsJsonObject().getAsJsonObject("round").getAsInt();
-            if (i<10) return 0;
+            if (i<5) return 0;
 
             if (Math.random() > 0.1) {
 
