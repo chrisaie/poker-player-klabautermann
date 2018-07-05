@@ -15,14 +15,14 @@ public class Player {
             int i = request.getAsJsonObject().getAsJsonObject("round").getAsInt();
             if (i<25) return 0;
 
-            if (Math.random() > 0.8) {
+            if (Math.random() > 0.63) {
 
                 return 3000 * (int) Math.random();
             }
             return 0;
         } catch (Exception e) {
 
-            if (Math.random() > 0.8) {
+            if (Math.random() > 0.63) {
 
                 return 3000 * (int) Math.random();
             }
